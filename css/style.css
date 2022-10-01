@@ -44,7 +44,7 @@ body {
     height: 4px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 50px;
 }
 ::-webkit-scrollbar-track{
@@ -409,6 +409,24 @@ body {
 
 /* end contact */
 /* start footer */
+footer{
+    background-image: url("../images/uu.jpg");
+    height: 320px;
+}
+footer .logo img{
+    width: 120px;
+    transition: 0.3s all ease;
+    animation: gray-scale 10s ease-in-out 5s infinite;
+}
+footer .location address{
+    font-size: 18px;
+}
+footer .email a , .email i{
+    font-size: 18px;
+}
+footer .email .link{
+    text-decoration: underline;
+}
 /* end footer */
 /* ######################################################## */
 /* start keyframe */
