@@ -115,7 +115,7 @@ body {
 }
 
 #preloader p {
-    font-size: 35px;
+    font-size: 25px;
     color: #f9e197;
     animation: gray-scale 2s ease-in-out 2s infinite;
 }
@@ -126,6 +126,11 @@ body {
         position: relative;
         transition: 0.3s all linear;
         animation: gray-scale 3s ease-in-out 2s infinite;
+    }
+    #preloader p {
+        font-size: 35px;
+        color: #f9e197;
+        animation: gray-scale 2s ease-in-out 2s infinite;
     }
 }
 
