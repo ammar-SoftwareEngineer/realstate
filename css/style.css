@@ -10,7 +10,7 @@
 
 /* ms */
 @media(min-width:576px) {}
- 
+
 /* md */
 @media(min-width:768px) {}
 
@@ -27,9 +27,11 @@
     font-family: 'Cairo', sans-serif;
     font-weight: 400;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 html,
 body {
     width: 100%;
@@ -39,17 +41,21 @@ body {
     overflow-x: hidden;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 8px;
     height: 4px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 50px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: var(--fourth-color);
 }
+
 /*  */
 .main-text h2 {
     font-size: 40px;
@@ -86,7 +92,7 @@ body {
 /* start preloading */
 #preloader {
     height: 100vh;
-    background-image: linear-gradient(to right top, #2d395d, #374f74, #42668c, #4e7ea2, #5b97b8, #6d9ec1, #7ea5c9, #8facd1, #a2a3c6, #ae9bb6, #b196a6, #ad9398);
+    background-image: linear-gradient(to right top, #5a639a, #505a90, #475185, #3d487b, #343f71, #434a79, #515580, #5f6188, #8686a4, #aeacc2, #d6d5e0, #ffffff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +119,8 @@ body {
     color: #f9e197;
     animation: gray-scale 2s ease-in-out 2s infinite;
 }
-@media(min-width:992px){
+
+@media(min-width:992px) {
     #preloader .loader {
         height: 20%;
         position: relative;
@@ -121,6 +128,7 @@ body {
         animation: gray-scale 3s ease-in-out 2s infinite;
     }
 }
+
 /* end preloading */
 /* start bg */
 .bg {
@@ -143,7 +151,7 @@ body {
     height: 100%;
     width: 720px;
     left: 50%;
-    transform: translate(-50%,-20%);
+    transform: translate(-50%, -20%);
 }
 
 @media(min-width:992px) {
@@ -394,12 +402,16 @@ body {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
-.contact input ,.contact textarea {
-    background-color:rgb(231, 231, 231);
+
+.contact input,
+.contact textarea {
+    background-color: rgb(231, 231, 231);
 }
-.contact label{
+
+.contact label {
     color: var(--primary-color);
 }
+
 @media(min-width:992px) {
     .contact .info-form form {
         width: 60%;
@@ -409,25 +421,108 @@ body {
 
 /* end contact */
 /* start footer */
-footer{
-    background-image: url("../images/uu.jpg");
-    height: 320px;
+footer {
+    background-image: linear-gradient(to left top, #5a639a, #505a90, #475185, #3d487b, #343f71, #4a4473, #5c4a75, #6c5177, #926c85, #b28a96, #ccacad, #e4cfca);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-footer .logo img{
-    width: 120px;
+footer .logo{
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+footer .logo img {
+    width: 300px;
     transition: 0.3s all ease;
     animation: gray-scale 10s ease-in-out 5s infinite;
 }
-footer .location address{
+
+footer .location address {
     font-size: 18px;
 }
-footer .email a , .email i{
+
+footer .email a,
+.email i {
     font-size: 18px;
 }
-footer .email .link{
+
+footer .email .link {
     text-decoration: underline;
 }
+
+footer .social span {
+    position: relative;
+    font-size: 18px;
+    margin-left: 15px;
+    z-index: 1;
+    transition: 0.3s all ease;
+}
+
+footer .social span a {
+    color: white;
+    transition: 0.2s all ease;
+}
+
+footer .social span::before {
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.social span:hover::before,
+footer .social span a:hover {
+    border-color: var(--fourth-color) !important;
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+
+@media(min-width:992px) {
+
+    footer .logo img {
+        width: 250px;
+        transition: 0.3s all ease;
+        animation: gray-scale 10s ease-in-out 5s infinite;
+    }
+
+    footer .location address {
+        font-size: 18px;
+    }
+
+    footer .email a,
+    .email i {
+        font-size: 18px;
+    }
+
+    footer .email .link {
+        text-decoration: underline;
+    }
+}
+
 /* end footer */
+/* start copyright */
+.copy {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.copy p {
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.copy span {
+    color: var(--fourth-color);
+}
+
+/* end copright */
 /* ######################################################## */
 /* start keyframe */
 @keyframes gray-scale {
