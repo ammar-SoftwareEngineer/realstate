@@ -355,6 +355,9 @@ body {
 .about .text-info {
     position: relative;
     background-color: var(--white-color);
+    border-radius: 0 15px 15px 0;
+    padding: 10px 10px 30px 0;
+    height: 100%;
 }
 
 .about .text-info::before {
@@ -393,8 +396,7 @@ body {
 }
 
 .services .info-services {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     height: 100%;
     border-radius: 15px;
     background-color: var(--white-color);
@@ -402,6 +404,7 @@ body {
 
 .services .info-services h3 {
     font-size: 18px;
+
 }
 
 .services .info-services .icon {
@@ -417,23 +420,35 @@ body {
 }
 
 .portfolio .info-portfolio {
-
-    padding-bottom: 20px;
+    display: grid;
+    place-items: center;
+    height: 100%;
     border-radius: 15px;
     background-color: var(--white-color);
+    padding-bottom:20px ;
 }
 
 .portfolio .info-portfolio img {
     width: 100%;
     height: 250px;
+    margin-top: -4px;
 }
 
 .portfolio .info-portfolio h3 {
-    font-size: 20px;
+    font-size: 19px;
     color: rgba(0, 0, 0, 0.685);
     text-align: center;
+    padding: 10px;
 }
 
+.portfolio .info-portfolio .btn{
+    background-color: var(--fourth-color);
+    
+}
+.portfolio .info-portfolio .btn a{
+    text-decoration: none;
+    color: white;
+}
 /* end portfilo */
 /* start contact */
 .contact {
